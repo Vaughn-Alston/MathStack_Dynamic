@@ -1,6 +1,7 @@
 //Programer Vaughn
 //Version 1.0
 
+
 #include <iostream>
 using namespace std;
 
@@ -15,9 +16,13 @@ class DynStack
           Node* top; // point to the top of the stack
 
     public: ~DynStack();
-            
+            void push(int);
+            void pop(int&); 
+            bool isEmpty(); 
+            void display();
+            int peek();
+            bool search(int);
+        
+}; // End of DynStack class
 
 
-
-
-};
