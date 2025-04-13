@@ -32,4 +32,18 @@ class DynStack
 
 }; // end of class
 
+//Destructor to clean up memory
+template <class T>
+
+DynStack<T> :: DynStack() 
+{
+    T temp;
+    while(!isEmpty())
+    {
+        pop(temp); // Repeatedly pop until stack is empty
+    }
+}
+ // end of destructor
+
+
 
